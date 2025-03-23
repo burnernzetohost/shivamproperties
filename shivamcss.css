@@ -1,0 +1,271 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset default styles and apply Poppins font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: white;
+}
+
+/* Header styles */
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    justify-content: space-between;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Logo styles (Left-Aligned) */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Navigation - Centered */
+nav {
+    position: absolute;  /* Position it absolutely within the header */
+    left: 50%;
+    transform: translateX(-50%);  /* Center it exactly */
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation */
+nav ul li a:hover {
+    color: #007BFF;
+}
+/* Button Styles */
+.find-house-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #333; /* Creates the outlined box */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.find-house-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3F5FF;
+    padding: 100px 50px;
+    height: 100vh;
+}
+
+/* Hero text */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 5px; /* Reduced space between h1 elements */
+    line-height: 1.1; /* Reduce space between lines */
+}
+
+.hero-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Hero image */
+.hero-image img {
+    width: 1300px; /* Increase image size */
+    height: auto;
+    position: absolute;
+    right: -500px; /* Moves the image more to the right, showing only the left part */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3F5FF;
+    padding: 100px 50px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Content (Left Side) */
+.hero-content {
+    max-width: 500px;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 5px 0;
+    line-height: 1.1; /* Reduce space between lines */
+}
+
+/* Hero Description */
+.hero-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+/* Each Stat Box */
+.stat-item {
+    text-align: center;
+}
+
+/* Stat Numbers */
+.stat-item h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Plus Sign Styling */
+.stat-item h2 span {
+    color: blue;
+}
+
+/* Stat Description */
+.stat-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/* Properties Showcase Section */
+.properties {
+    background-color: white;
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.properties h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.property-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.property-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.property-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.property-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
